@@ -1,0 +1,236 @@
+* {
+margin: 0;
+padding: 0;
+text-decoration: none;
+box-sizing: border-box;
+}
+
+body {
+font-family: "Montserrat", sans-serif;
+background-color: #f8f8f8;
+color: #333;
+}
+
+/* Cabeçalho */
+header {
+background-color: #19882c;
+color: white;
+padding: 10px 0;
+}
+
+.navbar {
+background-color: transparent !important;
+}
+
+.navbar-brand img {
+max-width: 100%;
+height: auto;
+}
+
+.nav-link {
+color: white !important;
+}
+
+.nav-link:hover {
+text-decoration: underline !important;
+}
+
+.form-control {
+background-color: transparent;
+border: 1px solid white;
+color: white;
+}
+
+.form-control::placeholder {
+color: white;
+}
+
+/* Títulos */
+.titulo-estilizado {
+font-size: 36px;
+font-weight: bold;
+margin: 20px 0;
+}
+
+/* Parágrafos */
+.paragrafo-estilizado {
+font-size: 18px;
+line-height: 1.6;
+}
+
+.paragrafo-identado {
+text-indent: 40px;
+}
+
+/* Seção de Notícias */
+.noticias-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.noticia {
+flex: 0 0 calc(33.333% - 20px);
+margin-bottom: 20px;
+background-color: white;
+border: 1px solid #ddd;
+border-radius: 5px;
+padding: 20px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s;
+}
+
+.noticia:hover {
+transform: translateY(-5px);
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.noticia h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.noticia p {
+font-size: 16px;
+}
+
+.noticia img {
+max-width: 100%;
+height: auto;
+margin-top: 10px;
+border-radius: 5px;
+}
+
+/* Rodapé */
+.footer {
+background-color: #19882c;
+color: white;
+padding: 20px 0;
+}
+
+.contact-list li {
+margin-bottom: 10px;
+font-size: 18px;
+}
+
+.contact-list a {
+color: white;
+text-decoration: none;
+}
+
+.contact-list a:hover {
+text-decoration: underline;
+}
+
+.contact-list img {
+width: 20px;
+height: 20px;
+margin-right: 10px;
+}
+
+.campus-info {
+font-size: 24px; 
+}
+
+#search-btn {
+font-size: 0%;
+}
+
+#search-btn:hover,
+#search-btn:active {
+background-color: #006400 !important;
+color: #fff !important;
+}
+
+.separar-linhas {
+white-space: pre-line;
+}
+
+.separa {
+white-space: pre-wrap;
+}
+
+.qr-code{
+width: 200px;
+height: 200px;
+}
+
+.noticia{
+  color: black;
+  text-decoration: none; 
+}
+
+.noticia:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* Estilos para telas pequenas (até 768px) */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 5px 0;
+  }
+
+  .navbar {
+    padding: 5px 0;
+  }
+
+  .navbar-brand img {
+    max-width: 100px;
+    margin-left: 5px;
+  }
+
+  .nav-link {
+    margin-right: 10px;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .titulo-estilizado {
+    font-size: 24px;
+  }
+
+  .paragrafo-estilizado {
+    font-size: 16px;
+    text-indent: 0;
+  }
+
+  .noticias-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .noticia {
+    width: 100%;
+  }
+  img.qr-code {
+    width: 50%; /* Você pode ajustar o valor conforme necessário */
+    max-width: none; /* Remove a restrição máxima de largura */
+    height: auto;
+  }
+
+  .nav-link {
+    margin: 5px 0; /* Espaço entre as abas de notícia e espécies */
+  }
+
+  .navbar-brand{
+    margin-bottom: 15px;
+  }
+  
+  .navbar-nav{
+    margin-right: 5px;
+  }
+
+  .d-flex{
+    margin-left: 5px;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  .navbar-nav{
+    width: 100%;
+  }
+}
